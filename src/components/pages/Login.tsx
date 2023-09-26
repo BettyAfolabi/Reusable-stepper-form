@@ -29,7 +29,7 @@ const Login = () => {
   };
 
   return (
-    <Stack spacing={2} justifyContent="center" alignItems="center">
+    <Stack spacing={1} justifyContent="center" alignItems="center">
       <TextField
         label="Username"
         type="text"

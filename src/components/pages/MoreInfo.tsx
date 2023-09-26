@@ -48,7 +48,7 @@ const MoreInfo = () => {
             "& fieldset": {
               borderColor: "#9c27b0",
             },
-            width: "600px",
+            width: "400px",
           }}
           label="Select a gender"
           onChange={handleChange}
@@ -60,11 +60,15 @@ const MoreInfo = () => {
         </Select>
       </FormControl>
 
-      <Box width="300px">
+      <Box width="250px">
         <FormControl>
           <FormLabel
             id="employment-status-label"
-            sx={{ fontSize: "20px", color: "purple" }}
+            sx={{
+              fontSize: "20px",
+              color: "purple",
+              marginTop: "20px",
+            }}
           >
             Employment Status
           </FormLabel>

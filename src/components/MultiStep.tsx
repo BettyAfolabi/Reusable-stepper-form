@@ -34,7 +34,7 @@ const MultiStep = () => {
   const [activeStep, setActiveStep] = useState(0);
 
   const methods = useForm({
-    mode: "onTouched",
+    mode: "onChange",
     resolver: yupResolver(stepSchemas[activeStep]),
   });
 
@@ -78,11 +78,11 @@ const MultiStep = () => {
   };
 
   return (
-    <Box>
-      <Typography variant="h3" color="secondary">
+    <Box height={100}>
+      <Typography variant="h4" color="secondary">
         MultiStep
       </Typography>
-      <Box mx={3} mt={2} mb={5}>
+      <Box mx={3} mt={2} mb={3}>
         <Stepper
           activeStep={activeStep}
           connector={<StepperConnector />}
@@ -132,10 +132,10 @@ const MultiStep = () => {
           <>
             <FormProvider {...methods}>
               <form onSubmit={methods.handleSubmit(handleSubmit)}>
-                <Box mt={3}>
+                <Box mt={1}>
                   {formSteps[activeStep].content}
 
-                  <Stack spacing={3} direction="row" display="block" mt={4}>
+                  <Stack spacing={1} direction="row" display="block" mt={2}>
                     <Button
                       variant="contained"
                       color="secondary"

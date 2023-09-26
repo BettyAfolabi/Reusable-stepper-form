@@ -32,7 +32,7 @@ const PersonalInformation = () => {
     setGender(event.target.value as string);
   };
   return (
-    <Stack spacing={3}>
+    <Stack spacing={1}>
       <Box
         sx={{
           display: "flex",
@@ -91,7 +91,7 @@ const PersonalInformation = () => {
               "& fieldset": {
                 borderColor: "#9c27b0",
               },
-              width: "600px",
+              width: "250px",
             }}
             label="Select a gender"
             onChange={handleChange}
@@ -112,7 +112,6 @@ const PersonalInformation = () => {
               "& fieldset": {
                 borderColor: "#9c27b0",
               },
-              width: "450px",
             }}
             {...register("dob", { required: "This field is required" })}
             error={!!errors.dob}

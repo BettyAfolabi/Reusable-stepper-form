@@ -34,7 +34,7 @@ const ContactInformation = () => {
   };
 
   return (
-    <Stack spacing={2}>
+    <Stack spacing={1}>
       <Box width="300px">
         <FormControl>
           <FormLabel
