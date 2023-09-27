@@ -91,7 +91,7 @@ const PersonalInformation = () => {
               "& fieldset": {
                 borderColor: "#9c27b0",
               },
-              width: "250px",
+              width: "470px",
             }}
             label="Select a gender"
             onChange={handleChange}
@@ -112,6 +112,7 @@ const PersonalInformation = () => {
               "& fieldset": {
                 borderColor: "#9c27b0",
               },
+              width: "300px",
             }}
             {...register("dob", { required: "This field is required" })}
             error={!!errors.dob}
