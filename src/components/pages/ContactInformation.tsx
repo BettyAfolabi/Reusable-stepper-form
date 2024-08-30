@@ -77,7 +77,7 @@ const ContactInformation = () => {
           fullWidth
           sx={{
             "& fieldset": {
-              borderColor: "#9c27b0",
+              borderColor: "secondary",
             },
           }}
           {...register("mobileNumber", {
@@ -113,7 +113,7 @@ const ContactInformation = () => {
         />
       </Box>
       <Box sx={{ display: "flex", flexDirection: "column" }}>
-        <Typography variant="h5" color="secondary">
+        <Typography variant="h5" color="secondary" pb={3}>
           Address
         </Typography>
         <TextField

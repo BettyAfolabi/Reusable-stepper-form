@@ -35,7 +35,7 @@ const MultiStep = () => {
 
   const methods = useForm({
     mode: "onChange",
-    resolver: yupResolver(stepSchemas[activeStep]),
+    resolver: yupResolver(stepSchemas[activeStep]  as any),
   });
 
   const formSteps = [
@@ -78,8 +78,8 @@ const MultiStep = () => {
   };
 
   return (
-    <Box height={100}>
-      <Typography variant="h4" color="secondary">
+    <Box height={100} mb={4} mx={6}>
+      <Typography variant="h3" color="secondary" align="center" pb={2}>
         MultiStep
       </Typography>
       <Box mx={3} mt={2} mb={3}>
@@ -105,7 +105,7 @@ const MultiStep = () => {
       </Box>
       <Box sx={{ mt: "7px" }}>
         {activeStep === finalStep ? (
-          <Stack>
+          <Stack display='flex' justifyContent='center' alignItems='center'>
             <Typography variant="h4" sx={{ mt: 5, mb: 2 }}>
               You have Submitted successfully
             </Typography>
@@ -135,7 +135,7 @@ const MultiStep = () => {
                 <Box mt={1}>
                   {formSteps[activeStep].content}
 
-                  <Stack spacing={1} direction="row" display="block" mt={2}>
+                  <Stack spacing={1} direction="row" display="flex" my={4} justifyContent='center' alignItems='center'>
                     <Button
                       variant="contained"
                       color="secondary"
