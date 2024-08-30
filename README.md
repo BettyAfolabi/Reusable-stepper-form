@@ -1,27 +1,59 @@
-# React + TypeScript + Vite
+# Validated MultiStep Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a multistep form validated at each step
 
-Currently, two official plugins are available:
+## Introduction
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In today's digital landscape, good user engagement and data collecting are critical in web and app development. For users to have a great experience, a user-friendly method must be built for them to submit their information.
 
-## Expanding the ESLint configuration
+This project provides the resources required to create dynamic multi-step forms that improve user engagement and streamline the process of collecting important data with a stepper interface.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Links
 
-- Configure the top-level `parserOptions` property like this:
+- Source Code URL: [Source code](https://github.com/BettyAfolabi/Reusable-stepper-form)
+- Live Site URL: [MarketMate](https://validated-step-form.netlify.app)
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+### Built with
+
+- React + Vite
+- Material UI
+- Typecript
+- React Hook Form
+- Yup
+
+## Getting Started
+
+To clone this repository, run the following command:
+
+```bash
+# Clone the repository
+git clone https://github.com/BettyAfolabi/Reusable-stepper-form
+
+# Navigate to the project directory
+cd Reusable-stepper-form
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+After cloning the repository, do
+ npm install
+
+To create a branch for your contribution
+
+```bash
+# Creating a branch and switching to the branch from the main branch
+git checkout -b NameOfBranch
+```
+
+To push to github
+
+```bash
+# Creating a branch and switching to the branch from the main branch
+git add.
+
+git commit -m "Initial commit"
+
+git push upstream NameOfBranch
+```
+
+## Contributing
+
+Contributions to this project is welcome. If you have any suggestions or bug fixes, please feel free to create a pull request.
