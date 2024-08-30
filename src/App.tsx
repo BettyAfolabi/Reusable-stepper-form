@@ -12,6 +12,12 @@ function App() {
   const theme = useMemo(() => createTheme({
     palette: {
       mode,
+      background: {
+        default: mode === 'light' ? '#e0d8d8' : '#121212',
+      },
+      text: {
+        primary: mode === 'light' ? '#242424' : '#ffffff',
+      },
     },
     typography: {
       fontFamily: "Inter, system-ui, Avenir, Helvetica, Arial, sans-serif",
