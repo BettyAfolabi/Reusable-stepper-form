@@ -11,7 +11,7 @@ This project provides the resources required to create dynamic multi-step forms 
 ### Links
 
 - Source Code URL: [Source code](https://github.com/BettyAfolabi/Reusable-stepper-form)
-- Live Site URL: [MarketMate](https://validated-step-form.netlify.app)
+- Live Site URL: [validated-step-form](https://validated-step-form.netlify.app)
 
 ### Built with
 
